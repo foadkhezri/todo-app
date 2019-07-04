@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3f72af;
+  --secondary-color: #e84545;
+  --light-color: #f9f7f7;
+  --dark-color: #dbe2ef;
+  --dark-gray: dimgray;
+}
+
+body {
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  color: var(--light-color);
+  display: inline-block;
+}
+
+::placeholder {
+  font-size: 1.3rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.delete-btn {
+  display: none;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 1rem;
+}
+
+.block {
+  display: inline-block;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+#main {
+  margin: 6rem auto;
+}
+
+#main .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-transform: uppercase;
+}
+
+#main #input-to-do {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--light-color);
+  border: none;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+#main .content-container {
+  width: 100%;
+  background-color: var(--light-color);
+}
+
+#main .content-container .content {
+  color: dimgray;
+  display: flex;
+}
+
+#main .content-container .content p {
+  padding: 1rem;
+}
+
+#main .content:nth-child(even) {
+  background-color: var(--dark-color);
+}
